@@ -6,18 +6,20 @@ const Country = (props) => {
     name, latitud, longitud, aqi, image,
   } = props;
   return (
-
-    <div className="card">
-      <img src={image} className="card-img-top" alt="country" />
-      <div className="card-body">
-        <div className="card-text">
-          <h2>
+    <div className="col-sm-6 country-card p-5">
+      <div className="card text-right">
+        <img src={image} className="card-img-top" alt="country" />
+        <div className="card-body">
+          <h4 className="card-title">
             {name}
+            <br />
             Latitud:
             {latitud}
+
+            <br />
             Longitud:
             {longitud}
-          </h2>
+          </h4>
           <p>
             Air Quality index:
             {aqi}
@@ -25,16 +27,15 @@ const Country = (props) => {
         </div>
       </div>
     </div>
-
   );
 };
 
 Country.propTypes = {
   name: PropTypes.string.isRequired,
-  latitud: PropTypes.string.isRequired,
-  longitud: PropTypes.string.isRequired, 
+  latitud: PropTypes.number.isRequired,
+  longitud: PropTypes.number.isRequired,
   aqi: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
-}
+};
 
 export default Country;
