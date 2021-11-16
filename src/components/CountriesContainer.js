@@ -7,41 +7,22 @@ import { fetchCountries } from '../redux/countries/countries';
 
 const CountriesContainer = () => {
   const dispatch = useDispatch();
-  const countriesState = useSelector((state) => state.countriesReducer.missions);
-  console.log(countriesState);
+  const countriesState = useSelector((state) => state.countriesReducer[0]);
+  console.log(countriesState, 'Hello');
   useEffect(() => {
     fetchCountries(dispatch);
   }, []);
 
   const countries = [
+
     {
-      name: 'Colombia',
+      name: 'Brasil',
       latitud: 4.570868,
       longitud: -74.297333,
       aqi: 1,
       image: colombiaImage,
     },
-    {
-      name: 'Colombia',
-      latitud: 4.570868,
-      longitud: -74.297333,
-      aqi: 1,
-      image: colombiaImage,
-    },
-    {
-      name: 'Colombia',
-      latitud: 4.570868,
-      longitud: -74.297333,
-      aqi: 1,
-      image: colombiaImage,
-    },
-    {
-      name: 'Colombia',
-      latitud: 4.570868,
-      longitud: -74.297333,
-      aqi: 1,
-      image: colombiaImage,
-    },
+
   ];
 
   return (
