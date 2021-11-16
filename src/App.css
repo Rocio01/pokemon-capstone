@@ -1,9 +1,20 @@
+body {
+  background-color: #5f4bb6;
+}
 .card-img-top {
-  width: 200px;
+  width: 100%;
 }
 
 .country-card {
   margin: 0 !important;
   padding: 0 !important;
-  width: 50% !important;
+  width: 49% !important;
+}
+
+.south {
+  width: 50%;
+}
+
+.card {
+  background-color: #86a5d9;
 }
