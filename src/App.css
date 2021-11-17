@@ -19,5 +19,14 @@ body {
   background-color: #86a5d9;
 }
 .pokemon {
-  width: 180px;
+  width: 150px;
+}
+.arrow {
+  width: 15px;
+}
+
+.pokemons-header {
+  max-width: 99%;
+  padding: 0%;
+  margin: 0%;
 }

@@ -10,15 +10,17 @@ const PokemonsContainer = () => {
   }, []);
   const pokemonsState = useSelector((state) => state.pokemonsReducer.pokemons);
   return (
-    <div>
+
+    <div className="row">
       <h1>POKEMONS</h1>
 
       {pokemonsState.map((pokemon) => (
         <Pokemon
           key={pokemon.name}
           name={pokemon.name}
-          image={pokemon.sprites.front_default}
+          image={pokemon.sprites.front_shiny}
           base_experience={pokemon.base_experience}
+          ability={pokemon.abilities[0].ability.name}
         />
       ))}
 
