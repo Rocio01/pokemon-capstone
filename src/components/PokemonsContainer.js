@@ -1,24 +1,28 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchPokemons } from '../redux/pokemons/pokemons';
+import Pokemon from './Pokemon';
 
 const PokemonsContainer = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    fetchPokemons(dispatch);
+    dispatch(fetchPokemons());
   }, []);
-
-  const pokemonsStore = useSelector((store) => store.pokemonsReducer.pokemons);
-  // console.log(pokemonsStore, 'Hello');
-
+  const pokemonsState = useSelector((state) => state.pokemonsReducer.pokemons);
   return (
-    <>
-      <h1>Hello</h1>
-      {pokemonsStore.map((pokemon) => (
-        console.log(pokemon.base_experience, 'hey')
+    <div>
+      <h1>POKEMONS</h1>
+
+      {pokemonsState.map((pokemon) => (
+        <Pokemon
+          key={pokemon.name}
+          name={pokemon.name}
+          image={pokemon.sprites.front_default}
+          base_experience={pokemon.base_experience}
+        />
       ))}
 
-    </>
+    </div>
   );
 };
 

@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 const SET_POKEMONS = 'air-pollution-tracker-latin-america/pokemons/SET_POKEMONS';
 const URL = 'https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20';
 
@@ -12,18 +10,15 @@ const setPokemons = (payload) => ({
   payload,
 });
 
-export const fetchPokemons = (dispatch) => {
-  const arr = [];
-  axios.get(URL)
-    .then((response) => {
-      response.data.results.map((pokemon) => (
-        axios.get(pokemon.url)
-          .then((res) => {
-            arr.push(res.data);
-          })
-      ));
-      dispatch(setPokemons(arr));
-    });
+export const fetchPokemons = () => (dispatch) => {
+  fetch(URL)
+    .then((response) => response.json())
+    .then((data) => {
+      const { results } = data;
+      const promisesArray = results.map((result) => fetch(result.url)
+        .then((response) => response.json()));
+      return Promise.all(promisesArray);
+    }).then((data) => dispatch(setPokemons(data)));
 };
 
 const pokemonsReducer = (state = initialState, action) => {

@@ -4,7 +4,6 @@ import PokemonsContainer from './components/PokemonsContainer';
 
 function App() {
   return (
-  // <PokemonsContainer />
     <>
       <PokemonsContainer />
     </>
