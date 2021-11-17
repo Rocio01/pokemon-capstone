@@ -9,7 +9,7 @@ const Pokemon = (props) => {
   return (
     <div className="col-sm-6 country-card">
       <div className="card">
-        <img src={image} className="card-img-top" alt="pok" />
+        <img src={image} className="card-img-top pokemon" alt="pokemon" />
         <div className="card-body">
           <h4 className="card-title">
             {name}
