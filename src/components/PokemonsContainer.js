@@ -12,8 +12,6 @@ const PokemonsContainer = () => {
   return (
 
     <div className="row">
-      <h1>POKEMONS</h1>
-
       {pokemonsState.map((pokemon) => (
         <Pokemon
           key={pokemon.name}

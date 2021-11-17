@@ -9,8 +9,8 @@ const Pokemon = (props) => {
   } = props;
   return (
     <>
-      <Link to={`/details/${name}`}>
-        <div className="col-sm-6 country-card">
+      <Link to={`/details/${name}`} className="col-sm-6 pokemon-card">
+        <div className="">
           <div className="card">
             <img src={image} className="card-img-top pokemon" alt="pokemon" />
             <div className="card-body">
