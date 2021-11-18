@@ -1,38 +1,118 @@
+body {
+  background-color: #4561b5;
+  color: #f2fefc;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.pokemon-card {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 49% !important;
+}
+
+.pokemon {
+  width: 180px;
+}
+
+.arrow {
+  width: 15px;
+}
+
+.header {
+  background-color: #588cef;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #f2fefc;
+}
+
+.arrow-left {
+  color: #f2fefc;
+}
+
+.title-header,
+.number-pokemons {
+  text-align: right;
+}
+
+#nidoqueen,
+#nidoking,
+#clefairy,
+#ninetales,
+#jigglypuff,
+#golbat,
+#oddish,
+#paras,
+#parasect,
+#diglett,
+#dugtrio,
+#psyduck,
+#golduck,
+#growlithe,
+#arcanine {
+  background-color: #4167b0;
+}
+
+#nidoran-m,
+#nidorino,
+#clefable,
+#vulpix,
+#wigglytuff,
+#zubat,
+#gloom,
+#vileplume,
+#venonat,
+#venomoth,
+#meowth,
+#persian,
+#mankey,
+#primeape,
+#poliwag {
+  background-color: #4063a5;
+}
+
+.header-container,
+.details-title {
+  color: #f2fefc;
+}
+
+.p-pokemon-card {
+  text-align: right;
+}
+
+.detailed-card {
+  background-color: #4063a5;
+}
+
+.p-detailed {
+  text-align: right;
+}
+
 .App {
-  text-align: center;
+  max-width: 425px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-detailed-name,
+.p-detailed-experience {
+  margin-right: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.div-1,
+.div-3 {
+  background-color: #4167b0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.div-2,
+.div-4 {
+  background-color: #4063a5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mic {
+  margin-right: 20px !important;
 }
