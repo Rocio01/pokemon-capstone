@@ -11,10 +11,13 @@ const Pokemon = (props) => {
     <>
       <Link to={`/details/${name}`} className="col-sm-6 pokemon-card">
         <div>
+
           <div className="card" id={name}>
+            <p>
+              <i className="fa fa-arrow-circle-o-right float-end" aria-hidden="true" />
+            </p>
             <img src={image} className="card-img-top pokemon" alt="pokemon" />
             <div className="card-body">
-              <i className="fa fa-arrow-circle-o-right" aria-hidden="true" />
               <h4 className="card-title text-uppercase p-pokemon-card">
                 { name}
               </h4>

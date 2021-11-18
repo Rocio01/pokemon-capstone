@@ -6,7 +6,7 @@ import DetailedPokemon from './components/DetailedPokemon';
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Router>
 
         <Nav />
@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/details/:name" element={<DetailedPokemon />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 

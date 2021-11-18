@@ -12,12 +12,8 @@ body {
   width: 49% !important;
 }
 
-.south {
-  width: 50%;
-}
-
 .pokemon {
-  width: 150px;
+  width: 180px;
 }
 .arrow {
   width: 15px;
@@ -86,4 +82,30 @@ a {
 
 .p-pokemon-card {
   text-align: right;
+}
+
+.detailed-card {
+  background-color: #4063a5;
+}
+.p-detailed {
+  text-align: right;
+}
+.App {
+  max-width: 425px;
+}
+.p-detailed-name,
+.p-detailed-experience {
+  margin-right: 10%;
+}
+
+.div-1,
+.div-3 {
+  background-color: #4167b0;
+}
+.div-2,
+.div-4 {
+  background-color: #4063a5;
+}
+.mic {
+  margin-right: 20px !important;
 }

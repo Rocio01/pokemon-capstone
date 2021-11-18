@@ -11,7 +11,7 @@ const PokemonsContainer = () => {
   }, []);
   const pokemonsState = useSelector((state) => state.pokemonsReducer.pokemons);
   return (
-    <>
+    <div className="pokemons-container">
 
       <PokemonsHeader />
 
@@ -28,7 +28,7 @@ const PokemonsContainer = () => {
         ))}
 
       </div>
-    </>
+    </div>
   );
 };
 
