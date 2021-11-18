@@ -10,11 +10,13 @@ const DetailedPokemon = () => {
   }, []);
   const pokemonsState = useSelector((state) => state.pokemonsReducer.pokemons);
   const { name } = useParams();
+
+  const filteredPokemon = pokemonsState.filter((pokemon) => pokemon.name === name);
   return (
 
     <div className="details">
       <div className="card">
-        {(pokemonsState.filter(((pokemon) => pokemon.name === name)).map((pokemon) => (
+        {(filteredPokemon.map((pokemon) => (
 
           <div className="col-sm-6 country-card" key={pokemon.name}>
             <div className="card">
