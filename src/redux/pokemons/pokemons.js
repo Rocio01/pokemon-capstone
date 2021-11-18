@@ -1,5 +1,5 @@
 const SET_POKEMONS = 'pokemon-capstone/pokemons/SET_POKEMONS';
-const URL = 'https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20';
+const URL = 'https://pokeapi.co/api/v2/pokemon/?offset=30&limit=30';
 
 const initialState = {
   pokemons: [],

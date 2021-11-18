@@ -5,24 +5,20 @@ import { Link } from 'react-router-dom';
 
 const Pokemon = (props) => {
   const {
-    base_experience, name, image, ability,
+    base_experience, name, image,
   } = props;
   return (
     <>
       <Link to={`/details/${name}`} className="col-sm-6 pokemon-card">
-        <div className="">
-          <div className="card">
+        <div>
+          <div className="card" id={name}>
             <img src={image} className="card-img-top pokemon" alt="pokemon" />
             <div className="card-body">
-              <h4 className="card-title">
-                { `Name: ${name}`}
+              <h4 className="card-title text-uppercase p-pokemon-card">
+                { name}
               </h4>
-              <p>
-                { `Expierence: ${base_experience}`}
-              </p>
-
-              <p>
-                { `Ability: ${ability}`}
+              <p className="p-pokemon-card">
+                { `Base Experience: ${base_experience}`}
               </p>
             </div>
           </div>
@@ -36,7 +32,6 @@ Pokemon.propTypes = {
   name: PropTypes.string.isRequired,
   base_experience: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
-  ability: PropTypes.string.isRequired,
 };
 
 export default Pokemon;

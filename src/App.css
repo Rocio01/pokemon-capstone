@@ -1,5 +1,5 @@
 body {
-  background-color: #5f4bb6;
+  background-color: #c4e4db;
 }
 .card-img-top {
   width: 100%;
@@ -15,9 +15,6 @@ body {
   width: 50%;
 }
 
-.card {
-  background-color: #86a5d9;
-}
 .pokemon {
   width: 150px;
 }
@@ -25,8 +22,63 @@ body {
   width: 15px;
 }
 
-.pokemons-header {
-  max-width: 99%;
-  padding: 0%;
-  margin: 0%;
+.header {
+  background-color: #91c9be;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+}
+
+.title-header,
+.number-pokemons {
+  text-align: right;
+}
+
+#nidoqueen,
+#nidoking,
+#clefairy,
+#ninetales,
+#jigglypuff,
+#golbat,
+#oddish,
+#paras,
+#parasect,
+#diglett,
+#dugtrio,
+#psyduck,
+#golduck,
+#growlithe,
+#arcanine {
+  background-color: #91c9be;
+}
+
+#nidoran-m,
+#nidorino,
+#clefable,
+#vulpix,
+#wigglytuff,
+#zubat,
+#gloom,
+#vileplume,
+#venonat,
+#venomoth,
+#meowth,
+#persian,
+#mankey,
+#primeape,
+#poliwag {
+  background-color: #79a7a5;
+}
+
+.header-container,
+.details-title {
+  color: #6d9699;
+}
+
+.p-pokemon-card {
+  text-align: right;
 }
