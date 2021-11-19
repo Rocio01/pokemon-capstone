@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pokemons container component matches MissionsContainer component snapshot 1`] = `
+exports[`pokemons container component matches PokemonsContainer component snapshot 1`] = `
 <div
   className="pokemons-container"
 >
