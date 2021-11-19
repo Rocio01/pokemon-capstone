@@ -116,3 +116,14 @@ a {
 .mic {
   margin-right: 20px !important;
 }
+
+@media screen and (min-width: 480px) {
+  .App {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
