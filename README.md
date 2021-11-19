@@ -17,6 +17,7 @@
 - Bootstrap
 - CSS3
 - Heroku
+- pokeapi
 
 ## Live Demo
 [Live Demo](https://zr-pokemons.herokuapp.com/details/ninetales)
