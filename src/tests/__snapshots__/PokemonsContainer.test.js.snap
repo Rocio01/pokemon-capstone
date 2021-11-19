@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pokemons container component matches MissionsContainer component snapshot 1`] = `
+<div
+  className="pokemons-container"
+>
+  <div
+    className="header row"
+  >
+    <img
+      alt="pokemons header"
+      className="pokemons-header col-6"
+      src="Bulbasaur.PNG"
+    />
+    <div
+      className="col-5 mt-5"
+    >
+      <h2
+        className="title-header"
+      >
+        POKEMONS
+      </h2>
+      <p
+        className="number-pokemons"
+      >
+        30 awesome pokemons
+      </p>
+    </div>
+  </div>
+  <h6
+    className="m-2 details-title"
+  >
+    DETAILS BY POKEMON
+  </h6>
+  <div
+    className="row pokemon-container"
+  />
+</div>
+`;
