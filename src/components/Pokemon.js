@@ -12,7 +12,7 @@ const Pokemon = (props) => {
       <Link to={`/details/${name}`} className="col-sm-6 pokemon-card">
         <div>
 
-          <div className="card" id={name}>
+          <div className="card card-poke" id={name}>
             <p>
               <i className="fa fa-arrow-circle-o-right float-end" aria-hidden="true" />
             </p>

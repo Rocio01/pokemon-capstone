@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detailed pokemon component matches Detailed component snapshot 1`] = `
+<div
+  className="details"
+/>
+`;
