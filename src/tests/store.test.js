@@ -1,11 +1,15 @@
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
+import { act } from 'react-dom/test-utils';
 import pokemonsReducer from '../redux/pokemons/pokemons';
 import '@testing-library/jest-dom/extend-expect';
 import App from '../App';
 import store from '../redux/configureStore';
 
 describe('store', () => {
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
   test('should return the initial state', () => {
     expect(pokemonsReducer(undefined, {})).toEqual({ pokemons: [] });
   });
@@ -16,6 +20,7 @@ describe('store', () => {
         <App />
       </Provider>,
     );
+    await act(() => sleep(500));
     expect(await findByText('DETAILS BY POKEMON')).toBeInTheDocument();
   });
 
@@ -25,6 +30,7 @@ describe('store', () => {
         <App />
       </Provider>,
     );
+    await act(() => sleep(500));
     expect(await findByText('catch your pokemon')).toBeInTheDocument();
   });
 
@@ -34,6 +40,7 @@ describe('store', () => {
         <App />
       </Provider>,
     );
+    await act(() => sleep(500));
     expect(await findByText('nidorino')).toBeInTheDocument();
   });
 });
