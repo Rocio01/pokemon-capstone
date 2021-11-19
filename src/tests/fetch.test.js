@@ -16,7 +16,7 @@ describe('Fetch from the pokeapi', () => {
         <App />
       </Provider>,
     );
-    await act(() => sleep(500));
+    await act(() => sleep(1000));
     expect(await findByText('nidoran-m')).toBeInTheDocument();
   });
 
@@ -26,7 +26,7 @@ describe('Fetch from the pokeapi', () => {
         <App />
       </Provider>,
     );
-    await act(() => sleep(500));
+    await act(() => sleep(1000));
     expect(await findByText('Base Experience: 55')).toBeInTheDocument();
   });
 
@@ -36,7 +36,7 @@ describe('Fetch from the pokeapi', () => {
         <App />
       </Provider>,
     );
-    await act(() => sleep(500));
+    await act(() => sleep(1000));
     expect(queryByText('not a pokemon')).not.toBeInTheDocument();
   });
 
@@ -46,7 +46,7 @@ describe('Fetch from the pokeapi', () => {
         <App />
       </Provider>,
     );
-    await act(() => sleep(500));
+    await act(() => sleep(1000));
     expect(await queryByText('Base Experience: -1000')).not.toBeInTheDocument();
   });
 
@@ -56,7 +56,7 @@ describe('Fetch from the pokeapi', () => {
         <App />
       </Provider>,
     );
-    await act(() => sleep(500));
+    await act(() => sleep(1000));
     expect(await findByText('wigglytuff')).toBeInTheDocument();
   });
 });
