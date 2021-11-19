@@ -6,7 +6,7 @@ import App from '../App';
 import store from '../redux/configureStore';
 
 describe('Fetch from the pokeapi', () => {
-  test('shows the one correct pokemon name that comes from the pokeapi', async () => {
+  test('shows one correct pokemon name that comes from the pokeapi', async () => {
     const { findByText } = render(
       <Provider store={store}>
         <App />
@@ -15,7 +15,7 @@ describe('Fetch from the pokeapi', () => {
     expect(await findByText('nidoran-m')).toBeInTheDocument();
   });
 
-  test('shows the one correct Base Experience value that comes from the pokeapi', async () => {
+  test('shows  one correct Base Experience value that comes from the pokeapi', async () => {
     const { findByText } = render(
       <Provider store={store}>
         <App />
@@ -33,7 +33,7 @@ describe('Fetch from the pokeapi', () => {
     expect(queryByText('not a pokemon')).not.toBeInTheDocument();
   });
 
-  test('shows the one correct pokemon name that comes from the pokeapi', async () => {
+  test('shows that the wrong Base Experience is not displayed ', async () => {
     const { queryByText } = render(
       <Provider store={store}>
         <App />
@@ -42,7 +42,7 @@ describe('Fetch from the pokeapi', () => {
     expect(await queryByText('Base Experience: -1000')).not.toBeInTheDocument();
   });
 
-  test('shows the one correct Base Experience value that comes from the pokeapi', async () => {
+  test('shows one correct pokemon name that comes from the pokeapi', async () => {
     const { findByText } = render(
       <Provider store={store}>
         <App />

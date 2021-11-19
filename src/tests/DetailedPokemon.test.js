@@ -35,6 +35,4 @@ describe('Detailed pokemon component', () => {
     expect(component.container).toHaveTextContent('Pikachu');
     expect(component.container).toHaveTextContent('100');
   });
-
-
 });

@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import DetailedPokemon from '../../components/DetailedPokemon';
 /* eslint-disable camelcase */
 
 const DetailedPokemonMock = (props) => {
-  const {name} = props;
+  const { name } = props;
   const arr = [{
     name: 'Pikachu',
     image_one: 'picachuFront',
@@ -95,7 +94,7 @@ const DetailedPokemonMock = (props) => {
   );
 };
 
-DetailedPokemon.propTypes = {
+DetailedPokemonMock.propTypes = {
   name: PropTypes.string.isRequired,
 };
 export default DetailedPokemonMock;
