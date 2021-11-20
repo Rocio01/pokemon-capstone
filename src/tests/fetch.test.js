@@ -10,13 +10,15 @@ describe('Fetch from the pokeapi', () => {
   function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
+  jest.setTimeout(30000);
   test('shows one correct pokemon name that comes from the pokeapi', async () => {
-    jest.setTimeout(30000);
     const { findByText } = render(
       <Provider store={store}>
         <App />
       </Provider>,
     );
+
+    await act(() => sleep(4000));
     expect(await findByText('nidoran-m')).toBeInTheDocument();
   });
 
