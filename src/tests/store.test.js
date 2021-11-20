@@ -20,7 +20,7 @@ describe('store', () => {
         <App />
       </Provider>,
     );
-    await act(() => sleep(1000));
+    await act(() => sleep(4000));
     expect(await findByText('DETAILS BY POKEMON')).toBeInTheDocument();
   });
 
@@ -30,7 +30,7 @@ describe('store', () => {
         <App />
       </Provider>,
     );
-    await act(() => sleep(1000));
+    await act(() => sleep(4000));
     expect(await findByText('catch your pokemon')).toBeInTheDocument();
   });
 
@@ -40,7 +40,7 @@ describe('store', () => {
         <App />
       </Provider>,
     );
-    await act(() => sleep(1000));
+    await act(() => sleep(4000));
     expect(await findByText('nidorino')).toBeInTheDocument();
   });
 });
