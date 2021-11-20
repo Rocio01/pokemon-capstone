@@ -10,6 +10,7 @@ describe('store', () => {
   function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
+  jest.setTimeout(30000);
   test('should return the initial state', () => {
     expect(pokemonsReducer(undefined, {})).toEqual({ pokemons: [] });
   });
