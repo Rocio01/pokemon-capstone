@@ -22,8 +22,6 @@
 ## Live Demo
 [Live Demo](https://zr-pokemons.herokuapp.com/details/ninetales)
 
-## Video link
-[Video](https://www.loom.com/share/3537b034bfd846d6a6ecd8b943ccee6f)
 
 ## Getting Started
 
